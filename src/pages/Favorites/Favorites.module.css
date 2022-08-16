@@ -1,0 +1,9 @@
+.noFavoritesMsg {
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 1.3px;
+}
+
+.favoritesHeader {
+  text-align: center;
+}

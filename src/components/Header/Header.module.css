@@ -1,0 +1,119 @@
+.header {
+  box-sizing: border-box;
+  max-width: 100vw;
+  background-color: #292828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em;
+  position: relative;
+}
+
+.logo {
+  object-fit: center;
+  max-height: 50px;
+  cursor: pointer;
+}
+
+.favCartContainer {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  column-gap: 2em;
+}
+
+.headerBtn {
+  background-color: transparent;
+  display: flex;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 2.5em;
+  outline: none;
+  z-index: 1;
+  margin: 0;
+  transition: all 0.25s ease;
+}
+
+.favoritesBtn:hover {
+  color: rgb(206, 23, 23);
+  transform: scale(1.3);
+}
+
+.willBuyBtn:hover {
+  color: rgb(30, 192, 30);
+  transform: scale(1.3);
+}
+
+.headerBtn i {
+  position: relative;
+  z-index: -1;
+}
+
+[data-favorite-count] {
+  position: relative;
+}
+
+[data-favorite-count]::before {
+  content: attr(data-favorite-count);
+  position: absolute;
+  top: -2.7px;
+  right: -2.7px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(206, 23, 23);
+  color: white;
+  font-size: 9px;
+}
+
+[data-willbuy-count] {
+  position: relative;
+}
+
+[data-willbuy-count]::before {
+  content: attr(data-willbuy-count);
+  position: absolute;
+  top: -2.7px;
+  right: -2.7px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(30, 192, 30);
+  color: white;
+  font-size: 9px;
+}
+
+.backToShopping {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  transition: all 250ms ease;
+}
+
+.backToShopping:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 400px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    padding: 1em 0em;
+  }
+
+  .favCartContainer {
+    width: 100%;
+    column-gap: 0em;
+  }
+}

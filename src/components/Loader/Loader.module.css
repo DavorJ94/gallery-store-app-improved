@@ -1,0 +1,13 @@
+.loader {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20em;
+}
+
+@media (max-width: 700px) {
+  .loader {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10em;
+  }
+}

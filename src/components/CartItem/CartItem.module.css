@@ -1,0 +1,54 @@
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.binAndImage {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.btnDelete,
+.btnDelete:focus {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+}
+
+.btnDelete:hover {
+  color: rgba(255, 0, 0, 0.7);
+  outline: none;
+}
+
+.btnDelete i {
+  position: relative;
+  z-index: -1;
+}
+
+.buyImg {
+  max-width: 240px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.buyImg:hover {
+  transform: scale(1.05);
+  filter: brightness(125%);
+}
+
+@media (max-width: 600px) {
+  .buyImg {
+    max-width: 120px;
+  }
+}

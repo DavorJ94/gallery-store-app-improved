@@ -1,0 +1,110 @@
+.imgContainer {
+  max-width: 300px;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 300px;
+  max-height: 250px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(1.2);
+  filter: brightness(125%);
+}
+
+.btnContainer {
+  display: flex;
+  padding: 0.75em 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.btnContainer button {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 1.8em;
+  outline: none;
+}
+
+.cartBtn:hover {
+  color: rgb(30, 192, 30);
+}
+
+.willBuyFavorite {
+  margin: 0 auto;
+  box-shadow: -4px -4px 10px 0px rgb(19, 216, 19),
+    3px 3px 10px 0px rgb(236, 16, 16);
+}
+
+.btnContainer i,
+.favoriteBtn i,
+.cartBtn i {
+  position: relative;
+  z-index: -1;
+}
+
+.checkedFav {
+  color: rgb(206, 23, 23);
+}
+
+.checkedCart {
+  color: rgb(30, 192, 30);
+}
+
+.favoriteBtn:hover {
+  color: rgb(206, 23, 23);
+}
+
+.default {
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.5);
+}
+
+.willBuy {
+  margin: 0 auto;
+  box-shadow: -3px -3px 10px 0px rgb(19, 216, 19);
+}
+
+.isFavorite {
+  margin: 0 auto;
+  box-shadow: 3px 3px 10px 0px rgb(236, 16, 16);
+}
+
+.deleteFavBtn {
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 0;
+  padding-bottom: 0.7em;
+  font-size: 1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.deleteFavBtn:hover,
+.deleteFavBtn:focus {
+  background-color: rgba(206, 23, 23, 0.85);
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 400px) {
+  .imgContainer {
+    max-width: 220px;
+  }
+
+  .image {
+    max-width: 220px;
+  }
+}
